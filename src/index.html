@@ -15,11 +15,12 @@
 </head>
 
 <body class="font-Overpass overflow-x-hidden">
+
   <header>
 
     <!-- mobile-nav -->
 
-    <nav class="absolute left-0 right-0 z-30">
+    <nav class="absolute left-0 right-0 z-30 lg:hidden">
       <div class="flex justify-between items-center m-4">
         <div class="cursor-pointer">
           <img class="scale-90" src="./images/logo.svg" alt="logo">
@@ -129,11 +130,119 @@
 
     </nav>
 
+
     <!-- /mobile-nav -->
+
+
+
+
 
 
     <!-- desktop-nav -->
 
+    <nav class="absolute left-0 right-0 z-30 hidden lg:block">
+      <div class="flex justify-between m-12">
+        <div class="flex items-center gap-[2em]">
+          <div class="cursor-pointer">
+            <img class="scale-90" src="./images/logo.svg" alt="logo">
+          </div>
+
+          <div class="cursor-pointer z-40 flex gap-8 pt-2">
+            <div class="accordion-desktop-tab relative">
+              <div class="accordion-desktop-select flex items-center gap-2 cursor-pointer">
+                <div class="font-bold text-white hover:underline">
+                  Product
+                </div>
+                <div>
+                  <img src="./images/icon-arrow-light.svg" alt="arrow-icon">
+                </div>
+              </div>
+
+              <div
+                class="accordion-desktop-content hidden items-center flex-col text-black left-[-2.2em] bg-white text-left p-6 gap-1 rounded-xl mt-2 absolute">
+
+                <div><a href="#">Overview</a></div>
+                <div><a href="#">Pricing</a></div>
+                <div><a href="#">Marketplace</a></div>
+                <div><a href="#">Features</a></div>
+                <div><a href="#">Integrations</a></div>
+
+              </div>
+
+            </div>
+
+            <div class="accordion-desktop-tab relative">
+              <div class="accordion-desktop-select flex items-center gap-2 cursor-pointer">
+                <div class="font-bold text-white hover:underline">
+                  Company
+                </div>
+                <div>
+                  <img src="./images/icon-arrow-light.svg" alt="arrow-icon">
+                </div>
+              </div>
+
+              <div
+                class="accordion-desktop-content hidden items-center flex-col text-black bg-white text-left left-[-1.5em] p-8 gap-1 shadow-md rounded-md mt-2 absolute">
+
+                <div><a href="#">About</a></div>
+                <div><a href="#">Team</a></div>
+                <div><a href="#">Blog</a></div>
+                <div><a href="#">Careers</a></div>
+
+              </div>
+
+            </div>
+
+            <div class="accordion-desktop-tab relative">
+              <div class="accordion-desktop-select flex items-center gap-2 cursor-pointer">
+                <div class="font-bold text-white hover:underline">
+                  Connect
+                </div>
+                <div>
+                  <img src="./images/icon-arrow-light.svg" alt="arrow-icon">
+                </div>
+              </div>
+
+              <div
+                class="accordion-desktop-content hidden items-center flex-col text-black bg-white text-left p-6 gap-1 left-[-2em] shadow-md rounded-md mt-2 absolute">
+
+                <div><a href="#">Contact</a></div>
+                <div><a href="#">Newsletter</a></div>
+                <div><a href="#">LinkedIn</a></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div>
+          <div class="menu-cta flex items-center gap-4 text-center">
+            <div>
+
+              <button class="text-white font-semibold">
+                <a href="#">Login</a>
+              </button>
+
+            </div>
+
+            <div class="group">
+
+              <button
+                class="bg-white px-8 py-2 group-hover:bg-white group-hover:bg-opacity-25 transition-all font-semibold rounded-full">
+                <a href="#" class="text-[#ff3d54] group-hover:text-white">Sign Up</a>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
 
 
     <!-- /desktop-nav -->
@@ -142,7 +251,7 @@
   </header>
   <main class="flex flex-col justify-center item-center">
     <section
-      class="min-h-[80vh] relative bg-gradient-to-b from-[#ff8f70] to-[#ff3d54] overflow-hidden z-10 rounded-bl-[6em]">
+      class="hero-section min-h-[80vh] relative bg-gradient-to-b from-[#ff8f70] to-[#ff3d54] overflow-hidden z-10 rounded-bl-[6em]">
 
       <div class="overflow-visible">
         <img class="absolute scale-[2.6] lg:hidden -z-10" src="./images/bg-pattern-intro-mobile.svg"
@@ -163,12 +272,17 @@
         </div>
 
         <div class="flex justify-center items-center gap-4 mt-14">
-          <div class="bg-white py-2 px-3 rounded-full">
-            <a class="text-[#ff3d54] font-extrabold" href="#">Start for
-              Free</a>
+          <div class="group">
+            <div class="bg-white py-2 px-4 group-hover:bg-white group-hover:bg-opacity-25 transition-all rounded-full">
+              <a class="text-[#ff3d54] font-extrabold group-hover:text-white transition-all" href="#">Start
+                for
+                Free</a>
+            </div>
+
           </div>
 
-          <div class="text-white border py-2 px-3 border-white rounded-full">
+          <div
+            class="text-white border py-2 px-4 border-white rounded-full hover:bg-white hover:text-[#ff3d54] transition-all">
             <a href="#">Learn More</a>
           </div>
 
@@ -261,14 +375,14 @@
       <div
         class="bg-gradient-to-b from-[#2c2d3f] to-[#3f4164] min-h-[100vh] md:min-h-[50vh] mt-[16em] overflow-hidden text-center text-white relative -z-10 rounded-tr-[6em] rounded-bl-[6em]">
 
-        <div class="absolute bg-no-repeat top-[-6em]">
+        <div class="absolute bg-no-repeat top-[-6em] lg:top-[-12em] lg:left-[-6em]">
           <img class="scale-[1.6] lg:scale-[1]" src="./images/bg-pattern-circles.svg" alt="bg-pattern-circles">
         </div>
 
-        <div class="flex flex-col justify-center min-h-[100vh] item-center lg:flex-row ">
+        <div class="flex flex-col justify-center min-h-[100vh] lg:min-h-[20vh] item-center lg:gap-[2em] lg:flex-row ">
 
           <div class="hidden overflow-visible lg:flex">
-            <img class="scale-[1]" src="./images/illustration-phones.svg" alt="illustration-phones">
+            <img class="scale-[1] object-contain" src="./images/illustration-phones.svg" alt="illustration-phones">
           </div>
 
 
@@ -278,7 +392,7 @@
               <div class="text-3xl font-semibold pb-4">
                 State of the Art <br class="lg:hidden"> Infrastructure
               </div>
-              <p class="w-[70vw] leading-7 text-slate-200">
+              <p class="w-[70vw] leading-7 lg:w-auto text-slate-200">
                 With reliability and speed in mind, worldwide data centers provide the <br class="hidden lg:block">
                 backbone for ultra-fast
                 connectivity.
@@ -300,20 +414,19 @@
 
 
 
-    <section
-      class="min-h-[100vh] flex flex-col justify-center relative items-center overflow-hidden mt-[8em] lg:mt-[12em]">
+    <section class="min-h-[100vh] flex flex-col justify-center relative items-center overflow-hidden mt-[12em]">
 
       <div class="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:mt-[4em]">
 
         <div class="lg:hidden">
-          <img class="scale-[1.2]" src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile">
+          <img class="scale-[1.4]" src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile">
         </div>
 
         <div class="hidden lg:flex overflow-visible absolute left-[-20em]">
           <img class="scale-[1]" src="./images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
         </div>
 
-        <div class="text-center pt-8 lg:text-left lg:right-0 lg:pr-[10em] lg:absolute">
+        <div class="text-center pt-16 lg:text-left lg:right-0 lg:pr-[8em] lg:absolute">
           <div class="flex justify-center flex-col lg:justify-between gap-8 items-center">
             <div>
               <div class="text-2xl font-semibold text-blue-950">
@@ -378,11 +491,11 @@
 
         <div class="flex flex-col justify-center text-slate-300 pt-4">
 
-          <a href="#" class="cursor-pointer">Overview</a>
-          <a href="#" class="cursor-pointer">Pricing</a>
-          <a href="#" class="cursor-pointer">Marketplace</a>
-          <a href="#" class="cursor-pointer">Features</a>
-          <a href="#" class="cursor-pointer">Integrations</a>
+          <a href="#" class="cursor-pointer hover:underline">Overview</a>
+          <a href="#" class="cursor-pointer hover:underline">Pricing</a>
+          <a href="#" class="cursor-pointer hover:underline">Marketplace</a>
+          <a href="#" class="cursor-pointer hover:underline">Features</a>
+          <a href="#" class="cursor-pointer hover:underline">Integrations</a>
 
         </div>
 
@@ -395,10 +508,10 @@
 
         <div class="flex flex-col justify-center text-slate-300 pt-4">
 
-          <a href="#" class="cursor-pointer">About</a>
-          <a href="#" class="cursor-pointer">Team</a>
-          <a href="#" class="cursor-pointer">Blog</a>
-          <a href="#" class="cursor-pointer">Careers</a>
+          <a href="#" class="cursor-pointer hover:underline">About</a>
+          <a href="#" class="cursor-pointer hover:underline">Team</a>
+          <a href="#" class="cursor-pointer hover:underline">Blog</a>
+          <a href="#" class="cursor-pointer hover:underline">Careers</a>
 
         </div>
 
@@ -411,9 +524,9 @@
 
         <div class="flex flex-col justify-center text-slate-300 pt-4">
 
-          <a href="#" class="cursor-pointer">Contact</a>
-          <a href="#" class="cursor-pointer">Newsletter</a>
-          <a href="#" class="cursor-pointer">LinkedIn</a>
+          <a href="#" class="cursor-pointer hover:underline">Contact</a>
+          <a href="#" class="cursor-pointer hover:underline">Newsletter</a>
+          <a href="#" class="cursor-pointer hover:underline">LinkedIn</a>
 
         </div>
 

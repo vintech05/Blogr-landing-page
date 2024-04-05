@@ -1,7 +1,11 @@
 const menu = document.querySelector(".menu");
 const burger = document.querySelector(".menu-burger");
 const closeIcon = document.querySelector(".close-menu");
-const accordions = document.querySelectorAll(".accordion-select");
+const accordionsMobile = document.querySelectorAll(".accordion-select");
+const accordionsDesktop = document.querySelectorAll(
+  ".accordion-desktop-select"
+);
+const hero = document.querySelector(".hero-section");
 
 function openMenu() {
   menu.style.display = "flex";
@@ -20,7 +24,9 @@ function closeMenu() {
   });
 }
 
-accordions.forEach((accordion) => {
+//mobile nav
+
+accordionsMobile.forEach((accordion) => {
   accordion.addEventListener("click", () => {
     document.querySelectorAll(".accordion-content").forEach((content) => {
       content.classList.remove("h-[300px]");
@@ -32,6 +38,31 @@ accordions.forEach((accordion) => {
       content.classList.remove("h-0");
       content.classList.add("h-[300px]");
     }
+  });
+});
+
+//desktop nav
+
+accordionsDesktop.forEach((accordion) => {
+  accordion.addEventListener("click", () => {
+    document
+      .querySelectorAll(".accordion-desktop-content")
+      .forEach((content) => {
+        content.classList.remove("flex");
+        content.classList.add("hidden");
+      });
+
+    const content = accordion.nextElementSibling;
+    if (content) {
+      content.classList.toggle("hidden");
+    }
+  });
+});
+
+hero.addEventListener("click", () => {
+  document.querySelectorAll(".accordion-desktop-content").forEach((content) => {
+    content.classList.remove("flex");
+    content.classList.add("hidden");
   });
 });
 
