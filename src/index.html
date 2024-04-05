@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body class="font-Overpass overflow-x-hidden">
+  <header>
+
+    <!-- mobile-nav -->
+
+    <nav class="absolute left-0 right-0 z-30">
+      <div class="flex justify-between items-center m-4">
+        <div class="cursor-pointer">
+          <img class="scale-90" src="./images/logo.svg" alt="logo">
+        </div>
+        <div class="cursor-pointer z-40">
+          <img class="menu-burger " src="./images/icon-hamburger.svg" alt="menu-icon-burger">
+          <img class="close-menu hidden" src="./images/icon-close.svg" alt="menu-icon-close">
+        </div>
+
+      </div>
+
+      <div>
+
+        <div
+          class="menu hidden flex-col gap-4 justify-center z-20 p-6 mx-8 lg:hidden left-0 top-[4em] shadow-2xl rounded-md bg-white">
+          <div class="accordion-tab text-center">
+            <div class="accordion-select flex items-center justify-center gap-2 cursor-pointer">
+              <div class="font-bold text-blue-950">
+                Product
+              </div>
+              <div>
+                <img src="./images/icon-arrow-dark.svg" alt="arrow-icon">
+              </div>
+            </div>
+
+            <div
+              class="accordion-content flex justify-center items-center flex-col text-slate-500 bg-slate-200 w-auto gap-1 rounded-md mt-2 h-[0px] overflow-hidden transition-all">
+
+              <div><a href="#">Overview</a></div>
+              <div><a href="#">Pricing</a></div>
+              <div><a href="#">Marketplace</a></div>
+              <div><a href="#">Features</a></div>
+              <div><a href="#">Integrations</a></div>
+
+            </div>
+
+          </div>
+
+          <div class="accordion-tab text-center">
+            <div class="accordion-select flex items-center justify-center gap-2 cursor-pointer">
+              <div class="font-bold text-blue-950">
+                Company
+              </div>
+              <div>
+                <img src="./images/icon-arrow-dark.svg" alt="arrow-icon">
+              </div>
+            </div>
+
+            <div
+              class="accordion-content flex justify-center items-center flex-col text-slate-500 bg-slate-200 w-auto gap-1 rounded-md mt-2 h-[0px] overflow-hidden transition-all">
+
+              <div><a href="#">About</a></div>
+              <div><a href="#">Team</a></div>
+              <div><a href="#">Blog</a></div>
+              <div><a href="#">Careers</a></div>
+
+            </div>
+
+          </div>
+
+          <div class="accordion-tab text-center">
+            <div class="accordion-select flex items-center justify-center gap-2 cursor-pointer">
+              <div class="font-bold text-blue-950">
+                Connect
+              </div>
+              <div>
+                <img src="./images/icon-arrow-dark.svg" alt="arrow-icon">
+              </div>
+            </div>
+
+            <div
+              class="accordion-content flex justify-center items-center flex-col text-slate-500 bg-slate-200 w-auto gap-1 rounded-md mt-2 h-[0px] overflow-hidden transition-all">
+
+              <div><a href="#">Contact</a></div>
+              <div><a href="#">Newsletter</a></div>
+              <div><a href="#">LinkedIn</a></div>
+
+            </div>
+
+          </div>
+
+          <div class="border-b-2 scale-95 border-solid border-slate-300 flex justify-center"></div>
+
+          <div class="menu-cta flex flex-col gap-4 text-center">
+            <div>
+
+              <button class="text-blue-950 font-semibold">
+                <a href="#">Login</a>
+              </button>
+
+            </div>
+
+            <div>
+
+              <button
+                class="bg-gradient-to-r from-[#ff8f70] to-[#ff3d54] px-8 py-2 text-white font-semibold rounded-full">
+                <a href="#">Sign Up</a>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!-- /mobile-nav -->
+
+
+    <!-- desktop-nav -->
+
+
+
+    <!-- /desktop-nav -->
+
+
+  </header>
+  <main class="flex flex-col justify-center item-center">
+    <section
+      class="min-h-[80vh] relative bg-gradient-to-b from-[#ff8f70] to-[#ff3d54] overflow-hidden z-10 rounded-bl-[6em]">
+
+      <div class="overflow-visible">
+        <img class="absolute scale-[2.6] lg:hidden -z-10" src="./images/bg-pattern-intro-mobile.svg"
+          alt="bg-pattern-intro-mobile">
+
+        <img class="absolute scale-[1.9] top-[-26em] right-[-14em] hidden -z-10 lg:block"
+          src="./images/bg-pattern-intro-desktop.svg" alt="bg-pattern-intro-desktop">
+      </div>
+
+      <div class="text-center justify-center items-center pt-[13em]">
+        <div class="text-3xl font-semibold lg:text-5xl">
+          <h1 class="text-white">A modern <br class="lg:hidden"> publishing platform</h1>
+        </div>
+        <div class="font-light mt-4">
+          <p class="text-white lg:text-lg ">
+            Grow your audience and build your online brand
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center gap-4 mt-14">
+          <div class="bg-white py-2 px-3 rounded-full">
+            <a class="text-[#ff3d54] font-extrabold" href="#">Start for
+              Free</a>
+          </div>
+
+          <div class="text-white border py-2 px-3 border-white rounded-full">
+            <a href="#">Learn More</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="min-h-[100vh] z-30 text-center flex flex-col justify-center items-center overflow-hidden mt-[8em]">
+
+
+      <div class="text-2xl font-semibold text-blue-950 mb-[2em] lg:text-3xl">
+        <span>Designed for the future</span>
+      </div>
+
+      <div class="flex flex-col justify-center relative items-center lg:flex-row-reverse lg:mt-[4em]">
+
+        <div class="lg:hidden">
+          <img src="./images/illustration-editor-mobile.svg" alt="illustration-editor-mobile">
+        </div>
+
+        <div class="hidden lg:flex absolute overflow-visible right-[-27em]">
+          <img class="scale-[1]" src="./images/illustration-editor-desktop.svg" alt="illustration-editor-desktop">
+        </div>
+
+        <div class=" pt-[2em] lg:text-left lg:pr-[10em]">
+          <div>
+            <div class="text-2xl font-semibold text-blue-950">
+              Introducing an <br class="md:hidden"> extensible editor
+            </div>
+            <div>
+
+              <div>
+
+                <p class="text-slate-500 py-6 w-[65vw]">
+                  Blogr features an exceedingly intuitive interface which lets you focus <br class="hidden lg:block">
+                  on
+                  one thing: creating
+                  content.
+                  The editor supports management of <br class="hidden lg:block"> multiple blogs and allows easy
+                  manipulation of embeds such as
+                  images, <br class="hidden lg:block">
+                  videos, and Markdown. Extensibility with plugins and themes provide <br class="hidden lg:block">
+                  easy
+                  ways to add
+                  functionality or
+                  change the looks of a blog.
+                </p>
+
+              </div>
+
+              <div>
+
+                <div class="text-2xl font-semibold text-blue-950">
+                  Robust content <br class="md:hidden"> management
+                </div>
+                <p class="text-slate-500 py-6 w-[65vw]">
+
+                  Flexible content management enables users to easily move through <br class="hidden lg:block">
+                  posts.
+                  Increase the usability of
+                  your
+                  blog
+                  by adding customized <br class="hidden lg:block"> categories, sections, format, or flow. With this
+                  functionality, you’re in <br class="hidden lg:block">
+                  full
+                  control.
+
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="relative md:mt-[8em]">
+
+      <div class="absolute overflow-visible top-[3em] md:right-[6em] md:top-[-3em] mb-[3em] lg:hidden z-10">
+        <img src="./images/illustration-phones.svg" alt="illustration-phones">
+      </div>
+
+      <div
+        class="bg-gradient-to-b from-[#2c2d3f] to-[#3f4164] min-h-[100vh] md:min-h-[50vh] mt-[16em] overflow-hidden text-center text-white relative -z-10 rounded-tr-[6em] rounded-bl-[6em]">
+
+        <div class="absolute bg-no-repeat top-[-6em]">
+          <img class="scale-[1.6] lg:scale-[1]" src="./images/bg-pattern-circles.svg" alt="bg-pattern-circles">
+        </div>
+
+        <div class="flex flex-col justify-center min-h-[100vh] item-center lg:flex-row ">
+
+          <div class="hidden overflow-visible lg:flex">
+            <img class="scale-[1]" src="./images/illustration-phones.svg" alt="illustration-phones">
+          </div>
+
+
+          <div class="flex flex-col justify-center items-center text-center z-30 lg:text-left">
+
+            <div'>
+              <div class="text-3xl font-semibold pb-4">
+                State of the Art <br class="lg:hidden"> Infrastructure
+              </div>
+              <p class="w-[70vw] leading-7 text-slate-200">
+                With reliability and speed in mind, worldwide data centers provide the <br class="hidden lg:block">
+                backbone for ultra-fast
+                connectivity.
+                This ensures your site will load <br class="hidden lg:block"> instantly, no matter where your readers
+                are, keeping your site
+                <br class="hidden lg:block">
+                competitive.
+              </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <section
+      class="min-h-[100vh] flex flex-col justify-center relative items-center overflow-hidden mt-[8em] lg:mt-[12em]">
+
+      <div class="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:mt-[4em]">
+
+        <div class="lg:hidden">
+          <img class="scale-[1.2]" src="./images/illustration-laptop-mobile.svg" alt="illustration-laptop-mobile">
+        </div>
+
+        <div class="hidden lg:flex overflow-visible absolute left-[-20em]">
+          <img class="scale-[1]" src="./images/illustration-laptop-desktop.svg" alt="illustration-laptop-desktop">
+        </div>
+
+        <div class="text-center pt-8 lg:text-left lg:right-0 lg:pr-[10em] lg:absolute">
+          <div class="flex justify-center flex-col lg:justify-between gap-8 items-center">
+            <div>
+              <div class="text-2xl font-semibold text-blue-950">
+                Free, open, simple
+              </div>
+              <p class="text-slate-500 w-[65vw] lg:w-auto py-6">
+                Blogr is a free and open source application backed by a large <br class="hidden lg:block"> community of
+                helpful developers. It supports
+                features such as code <br class="hidden lg:block"> syntax highlighting, RSS feeds, social media
+                integration, third-party <br class="hidden lg:block"> commenting
+                tools,
+                and works seamlessly with Google Analytics. The <br class="hidden lg:block"> architecture is clean and
+                is
+                relatively easy to learn.
+
+              </p>
+
+            </div>
+
+            <div>
+              <div class="text-2xl font-semibold text-blue-950">
+                Powerful tooling
+              </div>
+              <p class="text-slate-500 w-[65vw] lg:w-auto pt-10">
+                Batteries included. We built a simple and straightforward CLI tool that <br class="hidden lg:block">
+                makes
+                customization and deployment
+                a
+                breeze,
+                but
+                capable of <br class="hidden lg:block"> producing even the most complicated sites.
+
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </section>
+
+  </main>
+
+  <footer class="min-h-[80vh] bg-[#25252d] md:min-h-[20vh] py-[4em]  rounded-tr-[6em] mt-[12em]">
+    <div
+      class="flex flex-col md:flex-row md:justify-evenly text-center items-center md:items-start md:text-left gap-8 text-white">
+
+      <div class="pb-[2em]">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+
+      <div>
+        <div>
+          Product
+        </div>
+
+        <div class="flex flex-col justify-center text-slate-300 pt-4">
+
+          <a href="#" class="cursor-pointer">Overview</a>
+          <a href="#" class="cursor-pointer">Pricing</a>
+          <a href="#" class="cursor-pointer">Marketplace</a>
+          <a href="#" class="cursor-pointer">Features</a>
+          <a href="#" class="cursor-pointer">Integrations</a>
+
+        </div>
+
+      </div>
+
+      <div class=" gap-6">
+        <div>
+          Company
+        </div>
+
+        <div class="flex flex-col justify-center text-slate-300 pt-4">
+
+          <a href="#" class="cursor-pointer">About</a>
+          <a href="#" class="cursor-pointer">Team</a>
+          <a href="#" class="cursor-pointer">Blog</a>
+          <a href="#" class="cursor-pointer">Careers</a>
+
+        </div>
+
+      </div>
+
+      <div>
+        <div>
+          Connect
+        </div>
+
+        <div class="flex flex-col justify-center text-slate-300 pt-4">
+
+          <a href="#" class="cursor-pointer">Contact</a>
+          <a href="#" class="cursor-pointer">Newsletter</a>
+          <a href="#" class="cursor-pointer">LinkedIn</a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+</body>
+
+</html>
