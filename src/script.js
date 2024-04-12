@@ -19,7 +19,7 @@ function closeMenu() {
   burger.style.display = "flex";
 
   document.querySelectorAll(".accordion-content").forEach((content) => {
-    content.classList.remove("h-[300px]");
+    content.classList.remove("h-[150px]");
     content.classList.add("h-0");
   });
 }
@@ -29,14 +29,14 @@ function closeMenu() {
 accordionsMobile.forEach((accordion) => {
   accordion.addEventListener("click", () => {
     document.querySelectorAll(".accordion-content").forEach((content) => {
-      content.classList.remove("h-[300px]");
+      content.classList.remove("h-[150px]");
       content.classList.add("h-0");
     });
 
     const content = accordion.nextElementSibling;
     if (content) {
       content.classList.remove("h-0");
-      content.classList.add("h-[300px]");
+      content.classList.add("h-[150px]");
     }
   });
 });
